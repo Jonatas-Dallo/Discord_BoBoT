@@ -1,0 +1,32 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtualenv
+venv/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Arquivos de configuração sensíveis
+.env
+
+# Arquivos de log
+*.log
+
+# Pastas de builds
+build/
+dist/
+
+# Arquivos de pacotes temporários
+*.egg-info/
+
+# Outros
+*.sqlite3
+*.db
