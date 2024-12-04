@@ -12,16 +12,10 @@ def dado(comando: commands.Bot):
         usuario = message.author.display_name
 
         def formatar_resultado(rolagem, valor_dado):
-            """Destaca o valor mínimo ou máximo do dado."""
             return f"**` {rolagem} `**" if rolagem in {1, valor_dado} else f"` {rolagem} `"
         
         def formatar_resultado2(rolagem, valor_dado):
-            """Destaca o valor mínimo ou máximo do dado."""
             return f"**{rolagem}**" if rolagem in {1, valor_dado} else f"{rolagem}"
-        
-        
-        
-        
 
         # Caso seja do tipo dX (exemplo: d20)
         if re.match(r'^d\d+$', conteudo):
@@ -42,7 +36,7 @@ def dado(comando: commands.Bot):
                 reference=message
             )
             
-        # Caso seja do tipo X#dY (exemplo: 3#d20)
+        # Caso seja do tipo X#dY (exemplo: 2#d20)
         elif re.match(r'^\d+#d\d+$', conteudo):
             vezes, valor_dado = map(int, conteudo.split('#d'))
             resultados = [random.randint(1, valor_dado) for _ in range(vezes)]
