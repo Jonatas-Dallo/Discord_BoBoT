@@ -3,8 +3,9 @@ import re
 from discord.ext import commands
 
 def dado(comando: commands.Bot):
+    @comando.command(help="Rode um dado Yd(X), sendo X e Y numeros a escolha, o Y não obrigatório. Use # para jogar mais de um dado.")
     @comando.event
-    async def on_message(message):
+    async def dado(message):
         if message.author == comando.user:  # Ignora mensagens do bot
             return
 

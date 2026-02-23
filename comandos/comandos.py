@@ -3,7 +3,7 @@ from discord.ext import commands
 def salve(comando: commands.Bot):
     @comando.command(help="Saúda o bot")
     async def salve(ctx):
-        await ctx.send("```ansi[2;34m Salve! Eu sou o bot do BoB.[0m```")
+        await ctx.send("```ansi\n[2;34m Salve! Eu sou o bot do BoB.\n[0m```")
 
 def soma(comando: commands.Bot):
     @comando.command(help="Soma dois números.")
@@ -18,5 +18,5 @@ def multiplicar(comando: commands.Bot):
         await ctx.send(f"O resultado da multiplicação é {result}.")
         
         
-        
-        
+    
+         

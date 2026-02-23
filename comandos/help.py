@@ -18,7 +18,7 @@ class CustomHelp(commands.HelpCommand):
         help_message += "\n".join(commands_list)
 
         # Traduzindo a descrição do comando `help`
-        help_message = help_message.replace("**`$help`** - Shows this message", "**$help** - Exibe esta mensagem")
+        help_message = help_message.replace("**`$help`** - Shows this message", "**`$help`** - Exibe esta mensagem")
         print(help_message)
 
         await self.get_destination().send(help_message)
